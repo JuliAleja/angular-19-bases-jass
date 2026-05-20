@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ghpages": "ng build --base-href /angular-19-bases-jass/",
+    "deploy": "ng build --base-href /angular-19-bases-jass/ && npx angular-cli-ghpages --dir=dist/bases/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
